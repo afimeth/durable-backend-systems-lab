@@ -1,0 +1,44 @@
+{
+  "schema": "interview-lab-evidence/v1",
+  "measured_at_utc": "2026-10-03T16:36:36.746491+00:00",
+  "commit_sha": "5c9a832c8a1deacc7e032df8d37bc266911e77e9",
+  "tracked_worktree_dirty": false,
+  "platform": "Windows",
+  "architecture": "AMD64",
+  "toolchain": {
+    "python": "3.14.7",
+    "sqlite": "3.50.4"
+  },
+  "summary": {
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "checks": [
+    {
+      "command": [
+        "python.exe",
+        "app.py",
+        "demo"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "97c16227701450f5b6812a575b946328e0f51565570b4bbcdd1ae333268f9899",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python.exe",
+        "app.py",
+        "benchmark"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "64e05897c2391df1f77c358c30ff7bc559093d551f5a0d1420f4abc575885663",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "passed": true,
+  "safe_cv_claim": "Built a SQLite transfer API with transactional idempotency, atomic outbox jobs, concurrent overdraft/replay tests, and process-crash rollback verification.",
+  "unsupported_claims": "SQLite single-host writer locking; no PostgreSQL, ORM, migrations beyond initial schema, auth, TLS, tenant isolation, cloud deployment, currency conversion, real accounting compliance, external sink exactly-once guarantee, sustained load, or production operations.",
+  "ci_run_url": null
+}

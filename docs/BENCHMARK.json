@@ -1,0 +1,10 @@
+{
+  "operations": 200,
+  "seconds": 0.7365755999926478,
+  "operations_per_second": 271.5267787882145,
+  "balances": {
+    "alice": 99800,
+    "bob": 200
+  },
+  "scope": "single local SQLite writer; not production throughput"
+}
