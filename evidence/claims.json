@@ -1,0 +1,9 @@
+{
+  "kind": "python",
+  "IMPLEMENTED": "Integer-cent SQLite ledger, payload-bound idempotency keys, BEGIN IMMEDIATE transactions, atomic debit/credit/outbox, exclusive job claims, owner-checked completion, explicit HOLD recovery, loopback HTTP API.",
+  "MEASURED": "See exact-commit receipt, CI artifacts and baseline. Documentation does not substitute for a passing run.",
+  "DESIGNED": "PostgreSQL migration and tenant authentication are interview discussion extensions only.",
+  "NOT_CLAIMED": "SQLite single-host writer locking; no PostgreSQL, ORM, migrations beyond initial schema, auth, TLS, tenant isolation, cloud deployment, currency conversion, real accounting compliance, external sink exactly-once guarantee, sustained load, or production operations.",
+  "safe_cv_claim": "Built a SQLite transfer API with transactional idempotency, atomic outbox jobs, concurrent overdraft/replay tests, and process-crash rollback verification.",
+  "authorship": "Fresh AI-assisted implementation using synthetic data and public role requirements; no private source used."
+}
